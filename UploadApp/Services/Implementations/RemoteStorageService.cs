@@ -17,7 +17,7 @@ namespace UploadApp.Services.Implementations
 
         public async Task<bool> ExistsFileAsync(string fileName)
         {
-             Console.WriteLine("Veryfing is the file exists on remote storage ...");
+             Console.WriteLine("Verifying is the file exists on remote storage ...");
              var blob = _containerClient.GetBlobClient(fileName);
              var exists = await blob.ExistsAsync();
              return exists;
