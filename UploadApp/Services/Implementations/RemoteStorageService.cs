@@ -5,7 +5,7 @@ namespace UploadApp.Services.Implementations
 {
     public class RemoteStorageService : IRemoteStorageService
     {
-        private const string _connectionString = "DefaultEndpointsProtocol=https;AccountName=uploadappstorage;AccountKey=j2JvNGlGrPUZzGzBMTao64AsdZfMXfU7pUtns87uHTjao/RXrJkV0z/DPpDusRAAd87YYCZS5MOGcG3P+NWA/A==;EndpointSuffix=core.windows.net";
+        private const string _connectionString = "<My-ConnectionString>";
         private const string _containerName = "mycontainer";
         private readonly BlobContainerClient _containerClient;
         private readonly BlobServiceClient _blobServiceClient;
